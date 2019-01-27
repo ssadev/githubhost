@@ -36,7 +36,7 @@ input[type=range]::-webkit-slider-thumb {
   height: 900px;
   width: 20%;
   border-radius: 7px;
-  background: none;
+  background: yellow;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -3.6px;
