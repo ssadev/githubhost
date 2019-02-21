@@ -1,0 +1,41 @@
+<head>
+<title>Home</title>
+<link rel="stylesheet" href="/bootstrap.css">
+<meta name="theme-color" content="#B1B1B1">
+
+
+</head>
+<body>
+
+<div class="container col-6">
+</br></br></br><hr></br>
+<button class="container btn btn-outline-primary about" id="About" color="#428bca">About</button>
+
+</br></br></br><hr></br>
+<button class="container  btn btn-outline-warning contact" id="Contact" color="#FFB500">Contact</button>
+
+</br></br></br><hr></br>
+<button class="container  btn btn-outline-success pp" id="Privacy & Policy" color="#5cb85c">Privacy & Policy</button>
+
+</br></br></br><hr></br>
+<button class="container  btn btn-outline-danger tc" id="Terms and conditions" color="#d9534f">Terms and conditions</button>
+
+
+</div>
+
+
+<script src="/jquery.js"></script>
+<script>
+
+$("button").click(function(){
+let id = $(this).attr("id");
+let color = $(this).attr("color");
+
+$("title").text(id);
+$("meta").attr("content", color)
+//alert(id);
+
+});
+
+</script>
+</body>
