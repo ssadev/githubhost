@@ -12,6 +12,7 @@ body {
   width: 100%;
   background: linear-gradient(to bottom right, #108ee8, #4b1cb0);
   top: -10px;
+  padding: 40px;
 }
 .welcome-text {
   position: relative;
