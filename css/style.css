@@ -100,17 +100,15 @@ a {
   margin-top: 60px;
   padding-bottom: 150px;
 }
+
 #services .headind {
-  position: relative;
-  margin: auto;
   top: 10px;
-  width: 50%;
   height: 60px;
   background: #ebebeb;
   border-radius: 5px;
-  text-align: center;
   border-bottom: 3px solid rgb(85, 241, 70);
 }
+
 #services .headind:hover {
   animation: mymove 1s 1;
 }
@@ -145,38 +143,33 @@ a {
   top: 10px;
   font-family: "Anton", sans-serif;
 }
+
 #services .services {
-  padding: relative;
   height: 65%;
-  width: 90%;
-  margin: auto;
   margin-top: 50px;
-  display: flex;
 }
+
 #services .service {
-  display: inline;
-  width: 32%;
   height: 400px;
   background: #ebebeb;
-  margin: 3%;
   border-radius: 5px;
   box-shadow: 2px 2px 3px rgb(139, 138, 138);
   transition: 0.4s;
+  margin: auto;
 }
 
 #services .service:hover {
   box-shadow: 0px 0px 25px rgb(139, 138, 138);
 }
+
 #services .service .service-logo {
-  width: 90%;
   margin: auto;
   height: 35%;
   background-position: center;
   margin-top: 5%;
 }
+
 #services .service .service-logo img {
-  transform: translate(-50%, -50%);
-  margin: 50%;
 }
 #services .service h2 {
   margin-top: 10px;
@@ -184,6 +177,7 @@ a {
   text-align: center;
   font-weight: bold;
 }
+/*
 #services .service .service-description {
   padding-top: 20px;
   color: rgb(71, 70, 70);
@@ -193,8 +187,8 @@ a {
 #services .service .service-logo .wordpress {
   height: 150%;
   background-position: center;
-}
-
+} */
+/* 
 #services .contact-button {
   position: relative;
   left: 41%;
@@ -211,4 +205,52 @@ a {
 #services .contact-button:hover {
   background: rgb(92, 250, 92);
   box-shadow: 0px 0px 20px rgb(66, 224, 66, 0.7);
+} */
+
+@media only screen and (max-width: 768px) {
+  /* +++++++++ For Mobile +++++++*/
+  #services .headind {
+    top: 20px;
+    width: 75%;
+    border-radius: 5px;
+    border-bottom: 3px solid rgb(85, 241, 70);
+  }
+  #services .service {
+    margin-top: 40px;
+    width: 80%;
+    height: 50%;
+  }
+  #services .service .service-logo {
+    margin: auto;
+    height: 35%;
+    background-position: center;
+    margin-top: 5%;
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  /* ======== for Tablets ============ */
+  #services .service {
+    margin-top: 40px;
+    width: 80%;
+    height: 50%;
+  }
+  #services .service .service-logo {
+    margin: auto;
+    height: 35%;
+    background-position: center;
+    margin-top: 5%;
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* ======== for Desktop ============ */
+  #services .service .service-logo {
+    margin: auto;
+    height: 45%;
+    background-position: center;
+    margin-top: 5%;
+    width: 55%;
+  }
 }
