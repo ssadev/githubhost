@@ -4,153 +4,211 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Portfoilio</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Lilita+One"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Nunito"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Cabin"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Anton"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Hind+Siliguri"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./css/style.css"
-      warning="It is not a responsive stylesheet"
-    />
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="./asset/css/bootstrap.min.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="./asset/css/style.css" />
+    <style>
+    .click-to-top-btn{
+        position: fixed;
+        bottom:0px;
+        right: 0px;
+        padding: 17px 15px;
+        background: rgb(0, 0, 0, 0.6);
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+    }
+    .click-to-top-btn:hover{
+background: rgb(0, 0, 0, 0.95)
+    }
+
+    </style>
   </head>
   <body>
-    <div
-      class="d-flex flex-column flex-md-row  fixed-top align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm"
-      style="position: fixed"
-    >
-      <h5 class="my-0 mr-md-auto font-weight-normal animated heartBeat">
-        Sarjsk999
-      </h5>
-      <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="#">Home</a>
-        <a class="p-2 text-dark" href="#">About</a>
-        <a class="p-2 text-dark" href="#">Services</a>
-        <a class="p-2 text-dark" href="#">Contact</a>
-        <a class="p-2 text-dark" href="#">Project</a>
+    <div class="top-header">
+      <nav
+        class="navbar navbar-expand-md navbar-dark fixed-top bg-info nav-main"
+      >
+        <a class="navbar-brand" href="#">Fixed navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item text-center active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
 
-    <!-- header end -->
-    <!-- Home start -->
-    <section class="home">
-      <div class="welcome-text animated infinite bounce delay-2s">
-        <h2 class="animated infinite bounce ">
-          Welcome To My Website
-        </h2>
-      </div>
+    <section id="home">
+      <div class="welcome-text"><h1>Welcome To My Website</h1></div>
+      <br />
       <div class="home-svg">
-        <img src="./css/home-logo.svg" class="home-svg" />
+        <img src="./asset/images/home-logo.svg" alt="" />
       </div>
-      <div class="intoduction">
-        <h4 class="into-heah">Hi, I My Name Is SarjSk</h4>
-        <p class="intro-text">
-          I am a full-stack Developer. <br />
-          But Mainly I work With Back-end. I Also have A Team TO Work On
-          Font-End.
+      <div class="intro container text-center">
+        <h2>Hi, My Name Is sarjsk</h2>
+        <p>
+          Labore non id consequat consectetur reprehenderit.<br />
+          consequat consectetur reprehenderit.
         </p>
-        <a href="#" class="more-about-me">More About Me</a>
-        <br />
-        <a href="#" class="make-website ">Make Your Website</a>
+        <a href="#" class="more-btn">More</a>
       </div>
-      <div class="home-buttons">
-        <br />
+      <br />
+      <a href="#" class="make-website-btn">Make Website</a>
+      <div class="dialog">
+        <div class="line"></div>
+        <p>
+          Grow You Business <br />
+          With Us.
+        </p>
       </div>
     </section>
 
-    <!-- Home end -->
+    <!-- End OF Home Section -->
 
-    <!-- -----------Services Section Start------------- -->
-    <section id="services" class="container col-12 ">
-      <div class="container headind col-4 col-sm-8 text-center">
-        <h2 class="text-center">Services</h2>
-      </div>
 
-      <div class="services container col-lg-8 col-md-8 col-sm-7">
-        <div class="row">
-          <!-- Single Service Start -->
-          <div class="service container col-lg-3 col-md-3 col-sm-9 ">
-            <div class="service-logo container col-10 col-sm-6">
-              <img
-                src="./css/s1.jpg"
-                alt=""
-                class="cpl-12 responsive container"
-              />
+
+    <!-- Services Section -->
+    <section id="services" class="container">
+            <div class="service-section-heading container col-5 text-center">
+              <h2>Services</h2>
             </div>
-            <h2 class="service-name text-center">Web Development</h2>
-
-            <div class="service-description container col-11">
-              <p class="text-center">
-                Creeping for female light years that lesser can't evening heaven
-                isn't bearing tree
-              </p>
-            </div>
+      
+            <div class="services container">
+              <!-- Single Service card -->
+              <div class="service container">
+                <div class="service-up">
+                  <div class="service-icon">
+                    <img src="./asset/images/s2.jpg" alt="" class=" margin-auto" />
+                  </div>
+                  <div class="service-title text-center">
+                    <h3>Web Development</h3>
+                  </div>
+                </div>
+                <div class="service-down container text-center ">
+                  <p>
+                    Aliquip Lorem irure nulla eu aliquip cupidatat. Mollit incididunt
+                    aliqua mollit fugiat sit. Do sunt nostrud ea mollit dolor irure
+                    adipisicing cupidatat dolore ad qui tempor. Quis ut id id qui
+                  </p>
+                </div>
+              </div>
+              <!-- End Of Single Service -->
+              <!-- Single Service card -->
+              <div class="service container">
+                <div class="service-up">
+                  <div class="service-icon">
+                    <img src="./asset/images/s2.jpg" alt="" class=" margin-auto" />
+                  </div>
+                  <div class="service-title text-center">
+                    <h3>Web Development</h3>
+                  </div>
+                </div>
+                <div class="service-down container text-center ">
+                  <p>
+                    Aliquip Lorem irure nulla eu aliquip cupidatat. Mollit incididunt
+                    aliqua mollit fugiat sit. Do sunt nostrud ea mollit dolor irure
+                    adipisicing cupidatat dolore ad qui tempor. Quis ut id id qui
+                  </p>
+                </div>
+              </div>
+              <!-- End Of Single Service -->
+              <!-- Single Service card -->
+              <div class="service container">
+                <div class="service-up">
+                  <div class="service-icon">
+                    <img
+                      src="./asset/images/wordpress.png"
+                      alt=""
+                      class=" margin-auto wordpress-icon"
+                    />
+                  </div>
+                  <div class="service-title text-center">
+                    <h3>Web Development</h3>
+                  </div>
+                </div>
+                <div class="service-down container text-center ">
+                  <p>
+                    Aliquip Lorem irure nulla eu aliquip cupidatat. Mollit incididunt
+                    aliqua mollit fugiat sit. Do sunt nostrud ea mollit dolor irure
+                    adipisicing cupidatat dolore ad qui tempor. Quis ut id id qui
+                  </p>
+                </div>
+              </div>
+              <!-- End Of Single Service -->
+            </section>
+<!--  ===================Services Section End============== -->
+    <br />
+    <hr />
+    <br />
+   <!-- ========== About Section Start ============ -->
+   <section id="about" class="container">
+        <div class="up container ">
+          <div class="image"></div>
+          <div class="about-title container">
+            <h5>
+              Let's Know
+              <br />
+              About Us
+            </h5>
           </div>
-          <!-- Sinle Service End -->
-
-          <!-- Single Service Start -->
-          <div class="service container col-lg-3 col-md-3 col-sm-9 ">
-            <div class="service-logo container col-10">
-              <img
-                src="./css/s1.jpg"
-                alt=""
-                class="cpl-12 responsive container"
-              />
-            </div>
-            <h2 class="service-name text-center">Web Development</h2>
-
-            <div class="service-description container col-11">
-              <p class="text-center">
-                Creeping for female light years that lesser can't evening heaven
-                isn't bearing tree
-              </p>
-            </div>
-          </div>
-          <!-- Sinle Service End -->
-          <!-- Single Service Start -->
-          <div class="service container col-lg-3 col-md-3 col-sm-9 ">
-            <div class="service-logo container col-10">
-              <img
-                src="./css/s1.jpg"
-                alt=""
-                class="cpl-12 responsive container"
-              />
-            </div>
-            <h2 class="service-name text-center">Web Development</h2>
-
-            <div class="service-description container col-11">
-              <p class="text-center">
-                Creeping for female light years that lesser can't evening heaven
-                isn't bearing tree
-              </p>
-            </div>
-          </div>
-          <!-- Sinle Service End -->
         </div>
-      </div>
-    </section>
-    <!-- -----------Services Section End------------- -->
+        <div class="down container">
+          <p class="container float-left">
+            amet ut sint cillum. Officia nisi voluptate reprehenderit irure velit
+            excepteur quis ipsum ad irure. Exercitation fugiat tempor cillum
+            consequat adipisicing. Id non minim reprehenderit proident in ut ut
+            pariatur minim laboris minim. Minim officia ut elit laboris et
+            voluptate irure. Eu ut do culpa qui velit. Esse nostrud dolore irure
+            occaecat fugiat sint deserunt do ullamco adipisicing aute ex aliquip.
+            Consectetur culpa ad reprehenderit esse occaecat aute esse proident et
+            culpa. Excepteur commodo fugiat nisi dolor consequat excepteur
+            voluptate adipisicing. Irure incididunt minim pariatur id sint
+            exercitation dolor sint laboris velit reprehenderit deserunt.
+          </p>
+        </div>
+        <a href="#" class="contact-us-btn container float-left col-4">
+          Contact Us</a
+        >
+      </section>
+      <!-- ========== About Section End ============ -->
+
+<a href="#" class='click-to-top-btn'><i class="fa fa-arrow-up"></i></a>
+
+
+
+    <script src="./asset/js/jquery.js"></script>
+    <script src="./asset/js/bootstrap.min.js"></script>
+    <script src="./asset/js/popper.min.js"></script>
+    <script src="./asset/js/script.js"></script>
   </body>
 </html>
