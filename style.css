@@ -17,10 +17,10 @@ body {
 .welcome-text {
   position: relative;
   margin: auto;
-  font-weight: bold;
-  color: white;
+  font-weight: normal;
+  color: rgb(255, 255, 255);
   text-align: center;
-  top: 20%;
+  top: 30%;
 }
 .welcome-text h2 {
   font-weight: bold;
@@ -78,7 +78,7 @@ a {
   margin: auto;
   margin-top: 30px;
   padding: 10px 25px;
-  color: white;
+  color: rgb(19, 174, 21);
   display: inline-block;
   text-decoration: none;
   text-decoration-line: none;
